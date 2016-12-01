@@ -1,2 +1,6 @@
+"use strict";
 
-console.log(`hello sez: "${browser.hello.hello()}"`);
+browser.browserAction.onClicked.addListener(() => {
+  console.log("crashing the browser now...");
+  browser.crash.abort();
+});

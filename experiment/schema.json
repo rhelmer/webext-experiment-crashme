@@ -1,13 +1,13 @@
 [
   {
-    "namespace": "hello",
-    "description": "Hello world",
-    "permissions": ["experiments.simple"],
+    "namespace": "crash",
+    "description": "Crash",
+    "permissions": ["experiments.crash"],
     "functions": [
       {
-        "name": "hello",
+        "name": "abort",
         "type": "function",
-        "description": "Returns the string \"Hello, world\"",
+        "description": "Calls the abort() function",
         "parameters": []
       }
     ]

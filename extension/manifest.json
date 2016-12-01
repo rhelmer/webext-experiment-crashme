@@ -1,10 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "hello test",
-  "description": "test the simple experiment",
+  "name": "Crash Me Now!",
+  "description": "Crash the browser",
   "version": "1.0",
 
   "background": { "scripts": ["background.js"] },
+  "permissions": ["experiments.crash"],
 
-  "permissions": [ "experiments.simple" ]
+  "browser_action": {
+    "default_icon": "icons/icon64.png",
+    "default_title": "Crash me now!"
+  }
 }
