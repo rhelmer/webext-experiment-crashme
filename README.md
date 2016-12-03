@@ -1,6 +1,7 @@
 ## Crash Me Now!
 
-This is a test WebExtension + Experimental API to 
+This is a test WebExtension + Experimental API to crash the browser, for
+testing purposes.
 
 ## How to install this API and WebExtension
 
