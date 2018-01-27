@@ -26,7 +26,7 @@
       "parent": {
         "scopes": ["addon_parent"],
         "script": "crash/api.js",
-        "paths": [["crash", "crash"]]
+        "paths": [["crash"]]
       }
     }
   }
