@@ -22,11 +22,11 @@
 
   "experiment_apis": {
     "crash": {
-      "schema": "crash/schema.json",
+      "schema": "experiments/crash/schema.json",
       "parent": {
         "scopes": ["addon_parent"],
-        "script": "crash/api.js",
-        "paths": [["crash"]]
+        "script": "experiments/crash/api.js",
+        "paths": [["experiments", "crash"]]
       }
     }
   }

@@ -12,7 +12,7 @@ var crash = class extends ExtensionAPI {
     return {
       experiments: {
         crash: {
-          abort() {
+          async abort() {
             let debug = Cc[DEBUG_CONTRACTID].getService(Ci.nsIDebug2);
             debug.abort(0, 0);
           },
