@@ -1,6 +1,6 @@
 [
   {
-    "namespace": "crash",
+    "namespace": "experiments.crash",
     "description": "Crash",
     "functions": [
       {

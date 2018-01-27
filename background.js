@@ -3,7 +3,8 @@
 /* global browser */
 
 browser.browserAction.onClicked.addListener(() => {
-  browser.crash.abort().then(
+  console.log("about to crash...");
+  browser.experiments.crash.abort().then(
     message => console.log("SHOULD NOT RUN, already crashed", message)
   );
 });
