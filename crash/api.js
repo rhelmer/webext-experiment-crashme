@@ -6,8 +6,8 @@ const Ci = Components.interfaces;
 
 const DEBUG_CONTRACTID = "@mozilla.org/xpcom/debug;1";
 
-/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "API" }] */
-class API extends ExtensionAPI {
+/* eslint no-unused-vars: ["error", { "varsIgnorePattern": "crash" }] */
+var crash = class extends ExtensionAPI {
   getAPI() {
     return {
       crash: {
