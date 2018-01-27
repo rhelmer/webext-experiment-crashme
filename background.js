@@ -2,9 +2,8 @@
 
 /* global browser */
 
-browser.browserAction.onClicked.addListener(() => {
+browser.browserAction.onClicked.addListener(() => async function(){
   console.log("about to crash...");
-  browser.experiments.crash.abort().then(
-    message => console.log("SHOULD NOT RUN, already crashed", message)
-  );
+  let message = await browser.experiments.crash.abort();
+  console.log("SHOULD NOT RUN, already crashed", message);
 });
