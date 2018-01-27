@@ -11,7 +11,7 @@ class API extends ExtensionAPI {
   getAPI() {
     return {
       crash: {
-        abort() {
+        async abort() {
           let debug = Cc[DEBUG_CONTRACTID].getService(Ci.nsIDebug2);
           debug.abort(0, 0);
         },
