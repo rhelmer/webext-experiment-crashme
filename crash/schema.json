@@ -2,7 +2,6 @@
   {
     "namespace": "crash",
     "description": "Crash",
-    "permissions": ["experiments.crash"],
     "functions": [
       {
         "name": "abort",
