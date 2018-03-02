@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+  "name": "Crash Me Now!",
+  "description": "Crash the browser",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "crashmenow@test.mozilla.org"
+    }
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icons/icon64.png",
+    "default_title": "Crash me now!",
+    "browser_style": true
+  },
+
+  "experiment_apis": {
+    "crash": {
+      "schema": "experiments/crash/schema.json",
+      "parent": {
+        "scopes": ["addon_parent"],
+        "script": "experiments/crash/api.js",
+        "paths": [["experiments", "crash"]]
+      }
+    }
+  }
+}

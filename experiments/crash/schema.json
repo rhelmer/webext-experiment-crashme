@@ -1,14 +1,14 @@
 [
   {
-    "namespace": "crash",
+    "namespace": "experiments.crash",
     "description": "Crash",
-    "permissions": ["experiments.crash"],
     "functions": [
       {
         "name": "abort",
         "type": "function",
         "description": "Calls the abort() function",
-        "parameters": []
+        "parameters": [],
+        "async": true
       }
     ]
   }
