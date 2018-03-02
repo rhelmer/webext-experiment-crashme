@@ -10,10 +10,12 @@ const DEBUG_CONTRACTID = "@mozilla.org/xpcom/debug;1";
 var crash = class extends ExtensionAPI {
   getAPI() {
     return {
-      crash: {
-        async abort() {
-          let debug = Cc[DEBUG_CONTRACTID].getService(Ci.nsIDebug2);
-          debug.abort(0, 0);
+      experiments: {
+        crash: {
+          async abort() {
+            let debug = Cc[DEBUG_CONTRACTID].getService(Ci.nsIDebug2);
+            debug.abort(0, 0);
+          },
         },
       },
     };
