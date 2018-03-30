@@ -5,8 +5,8 @@ testing purposes.
 
 ## How to install this API and WebExtension
 
-1. Run a non-release build (Nightly or Aurora) version 59 (or newer)
-   build.
+1. Run a non-release build (Nightly or unbranded Beta/Release) version 59
+   (or newer) build.
 2. Navigate to `about:config` and set the pref `extensions.legacy.enabled` to
    `true`.
 3.  Navigate to `about:debugging`, choose
